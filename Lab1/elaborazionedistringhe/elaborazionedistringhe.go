@@ -56,8 +56,8 @@ func main() {
 	for i := 0; i < N; i++ { 
 		fmt.Scan(&parole[i])
 	}
+
 	fmt.Println(quanteConA(parole)) 
 	fmt.Println(primaConA(parole)) 
 	fmt.Println(piuCorta(parole)) 
-
 }
