@@ -1,0 +1,1 @@
+Provare a fare l'esercizio elettricita.go senza l'uso di Slice
