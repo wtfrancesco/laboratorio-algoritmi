@@ -28,6 +28,7 @@ func main(){
 			fmt.Println(somme)
 			somme = current
 		}
+		
 		prev = current	
 	}
 }
