@@ -8,6 +8,8 @@ import (
 func main(){
 	stringa := "ccbaacbabbcbab"
 	//stringa := "ababab"
+	//stringatest := "x"
+	//fmt.Println(stringatest[0:1])
 	sottostringhe := 0
 	for i,runa := range stringa {
 		if runa == 'a'{
