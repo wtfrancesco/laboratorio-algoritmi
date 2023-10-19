@@ -23,9 +23,12 @@ func main (){
         	if errors.Is(err, io.EOF) { // prefered way by GoLang doc
             	fmt.Println("Reading file finished...")
         	}
+        	if(flag){
+        		minimi++
+        	}
         	break
     	}
-
+    	fmt.Println(current)
 		if(prev < current){
 			flag = true
 		}else{
