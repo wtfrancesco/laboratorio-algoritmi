@@ -18,7 +18,6 @@ func main (){
 	for i := 0 ; i < len(utenti) ; i++{
 		for j := 0; j < len(utenti)-i-1 ; j++{
 			if(utenti[j].id < utenti[j+1].id){
-				//fmt.Println(utenti[j].id)
 				utenti[j] , utenti[j+1] = utenti[j+1],utenti[j]
 			}
 		}
