@@ -1,0 +1,97 @@
+1)Restituisce il settimo numero di fibonacci 
+2)Per gestire numeri positivi molto grandi senza rischio di Overflow
+3)Nel caso riceva n = 1 oppure n = 2 viene restituito 1 (primo e secondo numero di fibonacci)
+nel caso invece venga dato un n maggiore di 2 viene restituito l'n-esimo numero di fibonacci 
+4)No, f_iter1 restituisce l'n-esimo numero di fibonacci mentre f_iter2 restituisce il successivo dell'n-esimo numero di fibonacci 
+5)f_iter1 si, f_iter2 no
+6)f_iter2, rimuovo = dal <= del for oppure faccio partire i da 3 
+7)f_iter1
+Inizializzazione
+Riga 2 e 3: 1 * 3var =  3
+
+Confronto
+Riga 5 e 9: 3
+
+Somma e decremento
+Riga 10 e 11: 2*(n-1)
+
+Assegnamento
+Riga 11, 12 e 13: 3 * (n-1)
+
+3 + 3 + 2n - 2 + 3n - 3 = 6 + 5n - 5 = 1 + 5n
+
+Se n <= 2 Theta(1)
+Se n > 2 Theta(n)
+
+f_iter2
+Inizializzazione
+Riga 2 e 3: 3
+Riga 9: 1
+
+Confronto
+Riga 5: 2
+Riga 9: n-1
+
+Somma e incremento
+Riga 9: n-1
+Riga 10: n-1
+
+Assegnamento
+Riga 10, 11 e 12: 3*(n-1)
+
+3+1+2+3(n-1)+3(n-1) = 6+3n-3+3n-3 = 6+6n-6 = 6n
+
+Se n <= 2 Theta(1)
+Se n > 2 Theta(n)
+
+f_rec
+Cresce in modo esponenziale
+2^n
+Theta(2^n)
+
+8)a = 1, b = 1 ed n che rappresenta il numero di fibonacci che voglio calcolare 
+9)f_riter(1,1,7) 
+	|
+  f_riter(2,1,6) 
+	|
+  f_riter(3,2,5) 
+	|
+  f_riter(5,3,4) 
+	|
+  f_riter(8,5,3) 
+	|
+  f_riter(13,5,2)
+ Arrivato qui termino, a = 13 e lo stack decresce e in fine viene restituito 13 
+
+ 											f_ric(7)
+ 												|
+ 								_________________________________________13
+ 								|										|
+ 							f_ric(6)								f_ric(5)
+ 							____|____8							______|_______5
+ 							| 		|							|			  |
+ 					f_ric(5)    f_ric(4)					f_ric(4)		f_ric(3)
+ 				____|___5		______|_____3			____|___3		  	______|_____2
+				|		|		|			|			|		|			|			|
+			f_ric(4) f_ric(3)	f_ric(3)	f_ric(2)	f_ric(3) f_ric(2)	f_ric(2)	f_ric(1)
+			__|__3	___|___	2	 __|__2					__|__2
+		   |	 |	|		|	|	  |					|   |
+	f_r(3)		(2)	(2)		(1)	2     1                 2   1
+	_|_ 2
+	| |
+	2 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
